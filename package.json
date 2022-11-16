@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-google-play-info",
+  "version": "0.1.0",
+  "description": "Get Google Play app information",
+  "cordova": {
+    "id": "cordova-plugin-google-play-info",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android"    
+  ],
+  "author": "Platogo GmbH"
+}

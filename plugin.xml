@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-google-play-info" version="0.1.0">
+    <name>Google Play package info</name>
+    <description>Provide information about installed Google Play</description>    
+    <keywords>cordova, google play, package info</keywords>
+    <js-module src="www/google-play-info.js" name="google-play-info">
+        <clobbers target="GooglePlayInfo" />
+    </js-module>
+
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="GooglePlayInfo">
+                <param name="android-package" value="com.platogo.cordova.googleplayinfo.GooglePlayInfo"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/GooglePlayInfo.java" target-dir="src/com/platogo/cordova/googleplayinfo" />
+    </platform>  
+</plugin>
